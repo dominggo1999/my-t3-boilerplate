@@ -9,6 +9,8 @@
     "**/.next": true,
     "**/build": true,
     "**/dist": true,
+    "**/.turbo": true,
+    "**/tsconfig.tsbuildinfo": true,
   },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
