@@ -49,3 +49,6 @@ yarn-error.log*
 # ladle
 build 
 dist
+
+# prisma 
+db.sqlite

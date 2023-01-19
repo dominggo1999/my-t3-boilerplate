@@ -1,6 +1,8 @@
 import React from "react";
 import Head from "next/head";
 import AuthStatus from "components/AuthStatus";
+import { Button, Link } from "@acme/ui";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -11,6 +13,26 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <div className="flex gap-x-4">
+          <Button>Test button</Button>
+          <Button
+            component={Link}
+            href="https://www.google.com"
+            external
+            variant="secondary"
+          >
+            As Link
+          </Button>
+        </div>
+        <div>
+          <Image
+            className="h-[200px] object-cover"
+            src="https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="This"
+            width={800}
+            height={200}
+          />
+        </div>
         <div className="flex min-h-screen w-full flex-col items-center justify-center">
           <h1 className="text-4xl font-bold">my-t3-boilerplate</h1>
           <AuthStatus />
