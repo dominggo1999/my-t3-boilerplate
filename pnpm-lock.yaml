@@ -168,6 +168,7 @@ importers:
       '@types/react-dom': ^18.0.9
       class-variance-authority: ^0.4.0
       clsx: ^1.2.1
+      eslint: ^8.30.0
       postcss: ^8.4.20
       react: ^18.2.0
       react-aria: ^3.22.0
@@ -175,10 +176,11 @@ importers:
       react-icons: ^4.7.1
       react-stately: ^3.20.0
       tailwindcss: ^3.2.4
+      typescript: ^4.9.4
     dependencies:
       '@ladle/react': 2.4.5_biqbaboplfbrettd7655fr4n2y
       '@react-types/shared': 3.16.0_react@18.2.0
-      class-variance-authority: 0.4.0
+      class-variance-authority: 0.4.0_typescript@4.9.4
       clsx: 1.2.1
       react-aria: 3.22.0_biqbaboplfbrettd7655fr4n2y
       react-stately: 3.20.0_react@18.2.0
@@ -186,11 +188,13 @@ importers:
       '@acme/tailwind-config': link:../config/tailwind
       '@types/react': 18.0.26
       '@types/react-dom': 18.0.10
+      eslint: 8.31.0
       postcss: 8.4.21
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-icons: 4.7.1_react@18.2.0
       tailwindcss: 3.2.4_postcss@8.4.21
+      typescript: 4.9.4
 
 packages:
 
@@ -3818,13 +3822,15 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
 
-  /class-variance-authority/0.4.0:
+  /class-variance-authority/0.4.0_typescript@4.9.4:
     resolution: {integrity: sha512-74enNN8O9ZNieycac/y8FxqgyzZhZbxmCitAtAeUrLPlxjSd5zA7LfpprmxEcOmQBnaGs5hYhiSGnJ0mqrtBLQ==}
     peerDependencies:
       typescript: '>= 4.5.5 < 5'
     peerDependenciesMeta:
       typescript:
         optional: true
+    dependencies:
+      typescript: 4.9.4
     dev: false
 
   /classnames/2.3.2:
